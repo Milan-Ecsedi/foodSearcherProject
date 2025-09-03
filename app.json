@@ -37,6 +37,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "fb336a76-c7ab-4a0c-87e5-d92422a57670"
+      }
+    },
+    "owner": "ecsedim"
   }
 }
