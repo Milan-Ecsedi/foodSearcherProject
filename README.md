@@ -1,7 +1,8 @@
-#Foodsearcher Project created by Milán Ecsedi.
+# Foodsearcher Project created by Milán Ecsedi.
 
 React Native crossplatform application created with Expo
 
+Avalaible on GooglePlay ![alt text](image.png) and App store ![alt text](image-1.png)
 
 
 
