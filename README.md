@@ -2,7 +2,7 @@
 
 React Native crossplatform application created with Expo
 
-Avalaible on GooglePlay ![alt text](image.png) and App store ![alt text](image-1.png)
+Avalaible on GooglePlay ![alt text]<img src="image.png" alt="drawing" width="20" height="20"/> and App store ![alt text]<img src="image-1.png" alt="drawing" width="20" height="20"/>
 
 
 
