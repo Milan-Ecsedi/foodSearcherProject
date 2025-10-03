@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, FlatList, TouchableOpacity, StyleSheet, ListRenderItem } from 'react-native';
 import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
-
+import { Link } from 'expo-router';
 
 type Food = {
     id: string;
@@ -24,14 +24,16 @@ const foods: Food[]=[
 
 const HomeFetchedFoods: React.FC=()=>{
     const renderItem: ListRenderItem<Food>=({item})=> (
-        <TouchableOpacity style={styles.item}>
+        <Link href={'/mapview'} style={styles.item}>
+            <TouchableOpacity style={styles.item}>
             <Image source= {{uri: item.restaurantImage }} style={styles.image}/>
             <Text style={styles.restaurantname}>{item.restaurantName}</Text>
             <Text style={styles.foodname}>{item.foodName}</Text>
             <Text style={{fontWeight:'bold'}}>{item.price} Ft</Text>
-            <Text>rating: {item.rating}</Text>
+          { /* <Text>rating: {item.rating}</Text> */ }
             <Text style={{color: item.distance <= 130 ? '#3d8d46ff' : '#aa8043ff'}}>{item.distance}m away</Text>
         </TouchableOpacity>
+        </Link>
     )
 
 
@@ -48,8 +50,6 @@ const HomeFetchedFoods: React.FC=()=>{
             showsVerticalScrollIndicator={false}
             renderItem={renderItem}
             />
-
-            
         </View>
     )
 }

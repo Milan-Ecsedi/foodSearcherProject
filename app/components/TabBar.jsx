@@ -1,19 +1,24 @@
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 import React from 'react'
-import { AntDesign, FontAwesome5, FontAwesome6, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons'
+import {FontAwesome5, FontAwesome6, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons'
+import { useIsFocused } from '@react-navigation/native';
 
 
 const TabBar = ({state, descriptors, navigation}) => {
 
+  const focused = useIsFocused();
+
   const icons = {
-    index: (props) => <FontAwesome5 name="home" size={26} color={'#222'} {...props}/>,
+    login: (props) => <MaterialCommunityIcons name="account" size={26} color={'#222'} {...props}/>,
+    home: (props) => <FontAwesome5 name="home" size={26} color={'#222'} {...props}/>,
     notification: (props) => <Ionicons name="notifications"  size={26} color={'#222'} {...props}/>,
     popular: (props) => <FontAwesome6 name="map-location-dot" size={26} color={'#222'} {...props}/>,
-    profile: (props) => <MaterialCommunityIcons name="account" size={26} color={'#222'} {...props}/>
+    profile: (props) => <MaterialCommunityIcons name="account" size={26} color={'#222'} {...props}/>,
   }
 
 
   return (
+    <View style={{display: focused ? 'contents' : 'none' }}>
     <View style={styles.tabbar}>
       
           {state.routes.map((route, index) => {
@@ -25,7 +30,7 @@ const TabBar = ({state, descriptors, navigation}) => {
                   ? options.title
                   : route.name;
              
-            if (!['index', 'notification', 'popular', 'profile'].includes(route.name)) return null;
+            if (!['home', 'notification', 'popular', 'profile', 'login'].includes(route.name)) return null;
             
             const isFocused = state.index === index;
     
@@ -70,6 +75,7 @@ const TabBar = ({state, descriptors, navigation}) => {
               </TouchableOpacity>
             );
           })}
+        </View>
         </View>
   )
 

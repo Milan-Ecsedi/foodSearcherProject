@@ -4,17 +4,25 @@ import TabBar from "./components/TabBar";
 
 
 export default function RootLayout() {
+
+
+
   return <Tabs
   tabBar={props => <TabBar {...props}/>}>
     <Tabs.Screen
-    name="index"
+    name="login"
+    options={{
+      title:"Login"
+    }}/>
+    <Tabs.Screen
+    name="home"
     options={{
       title:"Home"
     }}/>
     <Tabs.Screen
     name="notification"
     options={{
-      title:"Notification"
+      title:"Deals"
     }}/>
     <Tabs.Screen
     name="popular"

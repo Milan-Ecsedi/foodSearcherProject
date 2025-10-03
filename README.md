@@ -1,8 +1,19 @@
-# Foodsearcher Project created by Milán Ecsedi.
+# Foodsearcher Project
+## Created by Milán Ecsedi and Mirjam Geiszler
+
+### THIS IS a Closed-source project. THIS digital product(software), belongs to the software's founder(s), protected by copyright©. Change, publish, verification, rights owned by the same people. No license given outside of the software's founder(s).
 
 React Native crossplatform application created with Expo
 
-Avalaible on GooglePlay<img src="image.png" alt="googleplay" width="20" height="20"/> and App store <img src="image-1.png" alt="appstore" width="20" height="20"/>
+Find your favourite foods with Foodsearcher©. the AI powered algorithm looks over the nearby restaurants, bistros, bars for your specific needs.
+It sorts the search results in many ways, closest, cheapest, or just the restaurant with the most ratings. Find 1000+ meals/drinks/desserts with Foodsearcher©
+
+Avalaible on GooglePlay <img src="./assets/images/googleplay-icon.png" alt="googleplay" width="20" height="20"/> and App store <img src="./assets/images/appstore-icon.png" alt="appstore" width="20" height="20"/>
+
+
+
+
+## Expo things: 
 
 
 
