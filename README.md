@@ -1,5 +1,9 @@
+<p align="center">
+<img src="./assets/Conso_Logo.png." alt="Conso" width="20" height="20"/>
 # Foodsearcher Project
+</p>
 Created by Milán Ecsedi and Mirjam Geiszler
+
 
 ### THIS IS a Closed-source project. THIS digital product(software), belongs to the software's founder(s), protected by copyright©. Change, publish, verification, rights owned by the same people. No license given outside of the software's founder(s).
 
