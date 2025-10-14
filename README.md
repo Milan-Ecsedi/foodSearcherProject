@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./assets/Conso_Logo.png." alt="Conso" width="20" height="20"/>
+<img src="./assets/Conso_Logo.png" alt="Conso" width="20" height="20"/>
 # Foodsearcher Project
 </p>
 Created by Milán Ecsedi and Mirjam Geiszler
