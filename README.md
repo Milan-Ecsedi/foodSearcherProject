@@ -7,7 +7,7 @@
 Created by Milán Ecsedi and Mirjam Geiszler
 
 
-### THIS IS a Closed-source project. THIS digital product(software), belongs to the software's founder(s), protected by copyright©. Change, publish, verification, rights owned by the same people. No license given outside of the software's founder(s).
+### THIS IS a Open-source project. Still, THIS digital product(software), belongs to the software's founder(s), protected by copyright©. Change, publish, verification, rights owned by the same people. No license given outside of the software's founder(s).
 
 React Native crossplatform application created with Expo
 
